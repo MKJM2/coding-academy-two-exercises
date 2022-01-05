@@ -1,0 +1,104 @@
+<!-- Your code here -->
+<head>
+  <title>Calculator</title>
+  <script>    
+    function add() {
+      let op = document.getElementById('operation')
+      op.innerHTML = "+"
+    }
+
+    function subtract() {
+      let op = document.getElementById('operation')
+      op.innerHTML = "-"
+    }
+
+    function multiply() {
+      // let a = parseInt(document.getElementById('a').value)
+      // let b = parseInt(document.getElementById('b').value)
+      let op = document.getElementById('operation')
+      // let result = document.getElementById('x')
+      op.innerHTML = "*"
+      // result.value = a * b
+    }
+
+    function divide() {
+      let op = document.getElementById('operation')
+      op.innerHTML = "/"
+    }
+
+    function calculate() {
+      let a = parseInt(document.getElementById('a').value)
+      let b = parseInt(document.getElementById('b').value)
+      let op = document.getElementById('operation').innerHTML
+      let result = document.getElementById('x')
+      switch (op) {
+        case "+":
+          result.value = a + b
+          break
+        case "-":
+          result.value = a - b
+          break
+        case "*":
+          result.value = a * b
+          break
+        case "/":
+          result.value = a / b
+          break
+      }
+    }
+  </script>
+</head>
+<body>
+  <a href="../Day_1_Answers/myFirstWebpage.html">Go to my webpage</a>
+  <div id="outer">
+    <div id="inner">
+      <!-- uncomment this code for just addition -->
+      <!-- <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">  -->
+      <form>
+        <input type="number" id="a" value="0">
+        <label id="operation">+</label>
+        <input type="number" id="b" value="0">
+        =
+        <!-- uncomment this code for just addition -->
+        <!-- <output name="x" for="a b"></output> -->
+        <output id="x"></output>
+      </form>
+      <form>
+        <button type="button" onclick="add()">+</button>
+        <button type="button" onclick="subtract()">-</button>
+        <button type="button" onclick="multiply()">*</button>
+        <button type="button" onclick="divide()">/</button>
+        <button type="button" onclick="calculate()">Calculate</button>
+      </form>
+    </div>
+  </div>
+</body>
+
+<style>
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #inner {
+    width: 400px;
+    height: 200px;
+    border: 3px solid black;
+  }
+
+  #outer {
+    width: 100%;
+    height: 100%;
+  }
+
+  input {
+    width: 40px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: row;
+  }
+</style>

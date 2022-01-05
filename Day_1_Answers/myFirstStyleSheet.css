@@ -1,0 +1,29 @@
+/* Feel free to use this file to add CSS */
+
+body {
+  background-color: pink;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+img {
+  border-radius: 20px;
+}
+
+#special {
+  background-color: red;
+}
+
+#special:hover {
+  background-color: blue;
+}
