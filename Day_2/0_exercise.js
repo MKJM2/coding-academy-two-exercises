@@ -11,6 +11,18 @@
 
 
 // Print out the string in reverse
+// a) using a for-loop
+// b) using built-in functions
+
+function reverseString(str) {
+    /* Your code goes here */
+    let reversed = "";
+    for (let character of str) {
+        reversed = character + reversed;
+    }
+    return reversed;
+}
+console.log(reverseString("hello"));
 
 
 // BONUS: 
