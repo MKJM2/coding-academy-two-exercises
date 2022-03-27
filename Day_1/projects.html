@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<!-- 5 different HTML tags -->
+<!-- at least 1 media tag: img video audio -->
+
+<html>
+    <head>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+        <title>Projects</title>
+    </head>
+<body>
+    <!-- Page Content-->
+
+    <!-- Since we've included the stylesheet, we can refer to the
+    classes defined in that stylesheet to make our live easier! -->
+    <div id="content" class="w3-content">
+        <header class="w3-panel w3-center w3-opacity">
+
+            <h1 class="w3-xlarge">Software Engineer</h1>
+            <h1>Michal Kurek</h1>
+
+            <!-- Links -->
+            <div class="w3-padding-32">
+                <a href="./index.html" class="w3-bar-item w3-button">Home</a>
+                <a href="./projects.html" class="w3-bar-item w3-button">Projects</a>
+                <a href="./resume.html" class="w3-bar-item w3-button">Resume</a>
+                <a href="./about.html" class="w3-bar-item w3-button">About me</a>
+            </div>
+        </header>
+        
+        <!-- Example of using inline styles: -->
+        <div class="w3-row-padding" style="margin-bottom:128px">
+
+            <!-- Example of using inline styles: -->
+            <!-- Advantages:
+                    - full customizability
+                    - the most power
+                 Disadvantages:
+                    - gets unreadable very quickly
+                    - not really maintainable code
+            -->
+            <div style="box-sizing: border-box; 
+                        padding:10px; 
+                        margin-bottom: 20px;
+                        box-shadow: 0 2px 5px 0 
+                                  rgba(0,0,0,0.16),
+                                    0 2px 10px 0
+                                  rgba(0,0,0,0.12)"
+            >
+                <a href="#"><h3>Project 1:</h3></a>
+                <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis
+                dignissim nunc. Sed at nisi elit. Nulla a nunc ligula. Nulla
+                Maecenas mollis eget orci a egestas...
+                </p>
+            </div>
+
+            <!-- Alternative: using classes from stylesheet -->
+            <!-- Advantages: 
+                    - readability
+                    - easy to maintain
+                 Disadvantages:
+                    - less reliable
+                    - we lose customizability
+                    - we are limited to the classes the stylesheet provides-->
+            
+            <!-- Best solution:
+                
+                Using stylesheets and overwriting stuff when necessary
+                with our own stylesheet
+            -->
+            <div class="w3-card w3-row card">
+                <a href="#"><h3>Project 3:</h3></a>
+                <p>
+                Donec sit amet risus eget lectus laoreet pharetra in non massa.
+                Fusce nunc enim, cursus convallis hendrerit vel, ultrices nec dolor.
+                Donec eu orci ipsum. Nulla pulvinar pharetra maximus. Etiam non
+                eleifend hendrerit. Donec dapibus finibus nulla, vitae aliquam nisi
+                viverra vitae...
+                </p>
+            </div>
+
+            <br/>
+
+            <p>More exercises:</p>
+
+            <!-- Make a centered yellow square, with text inside saying:
+                "Hello, World!"
+            -->
+
+            <h3>Exercise 1</h3>
+            <div class="square">
+                Hello, World!
+            </div>
+
+
+            <!-- Make a table:
+
+                    --------------------------------
+                    | Quick    | Brown fox  | Jumps  |
+                    --------------------------------
+                              | Lazy | Dog | and    |
+                              -----------------------
+                     Over The | Then | It  | Fall   |
+                              ----------------------
+                              | Prey to a lion      |
+                    --------------------------------
+                -->
+            <h3>Exercise 2</h3>
+            <div class="exercise2">
+                <table border="1">
+                    <tr>
+                        <td>Quick</td>
+                        <td colspan="2">brown fox</td>
+                        <td>jumps</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">over the</td>
+                        <td>lazy</td>
+                        <td>dog</td>
+                        <td>and</td>
+                    </tr>
+                    <tr>
+                        <td>then</td>
+                        <td>it</td>
+                        <td>fell</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">prey to a hunter</td>
+                    </tr>
+                </table>
+            </div>
+
+
+
+            <!-- Embed the following in your webpage
+            https://www.w3resource.com/html-css-exercise/big_buck_bunny.ogv
+            https://www.w3resource.com/html-css-exercise/big_buck_bunny.mp4
+            -->
+            
+            <h3>Exercise 3</h3>
+            <video width="300" controls>
+                <source src="https://www.w3resource.com/html-css-exercise/big_buck_bunny.ogv" type="video/ogv">
+                <source src="https://www.w3resource.com/html-css-exercise/big_buck_bunny.mp4" type="video/mp4">
+                Your browser does not support the <code>video</code> element.
+            </video>
+
+
+            <!-- Use a Google Font-->
+
+
+            <!-- Style the first and last element of
+            the following paragraphs to be blue -->
+            <h3> Exercise 5</h3>
+
+            <p>In 1986 the Defense Advanced Research Projects Agency (DARPA), the Army Research Office (ARO), the National Science Foundation (NSF), and ESL, Inc sponsored Berkeley POSTGRES Project which was led by Michael Stonebraker.</p>
+            <p>In 1984, an SQL language interpreter was added to POSTGRES. And thenm it was released to the web under the name of Postgres95. By 1996, the new name PostgreSQL was chosen for the project.</p>
+            <p>PostgreSQL supports four standard procedural languages (which allows the users to write their own code which can be executed by database server)- PL/pgSQL, PL/Tcl, PL/Perl and PL/Python.</p>
+            <p>PostgreSQL supports B+-tree, hash, generalized search trees(GiST) and generalized inverted indexes (GIN). Users can also create their own customized indexes.</p>
+
+
+        </div>
+    </div>
+
+    <footer class="w3-padding-64 w3-light-grey w3-center w3-large w3-container">
+        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+        <i class="fa fa-snapchat w3-hover-opacity"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+        <i class="fa fa-twitter w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
+    </footer>
+</body>
+</html>
+
+ 
+
